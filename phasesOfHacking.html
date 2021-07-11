@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<title>Phases of Hacking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 100px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+.aligncenter {
+    text-align: center;
+}
+
+</style>
+
+<body>
+
+
+    <div class="card">
+      <h2>Phases of Hacking</h2>
+      <h5>July 7, 2021</h5>
+      <br><br>
+      <p class="aligncenter">
+        <img src="images/phasesOfHacking.jpg" alt="centered image" /></p>
+      <br><br>
+      <p style="text-align: center;"><strong>Let us see the steps that ethical hackers follow while planning and executing an attack</strong></p>
+      <br><br><br>
+
+      <p>There are mainly six phases in ethical hacking. A Security Expert (Ethical Hacker) doesn't necessarily have to follow these six steps in a sequential manner. It’s a stepwise process and when followed yields a better result.</p>
+
+      <p>The phases of planning and executing an attack are as follows: <br> <br>
+
+         1) <strong>Reconnaissance</strong>  <br> <br>
+
+         2) <strong>Scanning</strong> <br> <br>
+
+         3) <strong>Gaining Access</strong> <br> <br>
+
+         4) <strong>Maintaining Access</strong> <br> <br>
+
+         5) <strong>Clearing Tracks</strong> <br> <br>
+
+         6) <strong>Reporting the Attack</strong> <br> <br>
+
+         Lets discuss these steps in detail: <br><br>
+
+        <strong><u>Reconnaissance:</u></strong> This is the first phase where the Hacker tries to collect information about the target. It may include Identifying the Target, finding out the target’s IP Address Range, Network, DNS records, etc.Let’s assume that an attacker is about to hack a websites’ contacts. <br>The hacker may do so by : using a search engine like maltego, researching the target say a website (checking links, jobs, job titles, email, news, etc.), or a tool like HTTPTrack to download the entire website for later enumeration, the hacker is able to determine the following:  Staff names, positions, and email addresses. <br><br>
+
+        <strong><u>Scanning:</u></strong> This phase includes usage of tools like dialers, port scanners, network mappers, sweepers, and vulnerability scanners to scan data. Hackers are now probably seeking any information that can help them perpetrate attack such as computer names, IP addresses, and user accounts.Now that the hacker has some basic information, the hacker now moves to the next phase and begins to test the network for other avenues of attacks. The hacker decides to use a couple methods for this end to help map the network (i.e. Kali Linux, Maltego and find an email to contact to see what email server is being used).  The hacker looks for an automated email if possible or based on the information gathered he may decide to email HR with an inquiry about a job posting. <br><br>
+
+        <strong><u>Gaining Access:</u></strong> In this phase, hacker designs the blueprint of the network of the target with the help of data collected during Phase 1 and Phase 2. The hacker has finished enumerating and scanning the network and now decide that they have a some options to gain access to the network. <br>For example, say hacker chooses Phishing Attack: The hacker decides to play it safe and use a simple phishing attack to gain access.  The hacker decides to infiltrate from the IT department.  They see that there have been some recent hires and they are likely not up to speed on the procedures yet.  A phishing email will be sent using the CTO’s actual email address using a program and sent out to the techs.  The email contains a phishing website that will collect their login and passwords.  Using any number of options (phone app, website email spoofing, Zmail, etc) the hacker sends a email asking the users to login to a new Google portal with their credentials.  They already have the Social Engineering Toolkit running and have sent an email with the server address to the users masking it with a bitly or tinyurl. <br>Other options include creating a reverse TCP/IP shell in a PDF using Metasploit ( may be caught by spam filter).  Looking at the event calendar they can set up a Evil Twin router and try to Man in the Middle attack users to gain access.  An variant of Denial of Service attack, stack based buffer overflows, and session hijacking may also prove to be great. <br><br>
+
+        <strong><u>Maintaining Access:</u></strong> Once a hacker has gained access, they want to keep that access for future exploitation and attacks. Once the hacker owns the system, they can use it as a base to launch additional attacks. <br>In this case, the owned system is sometimes referred to as a zombie system.Now that the hacker has multiple e-mail accounts, the hacker begins to test the accounts on the domain.  The hacker from this point creates a new administrator account for themselves based on the naming structure and try and blend in.  As a precaution, the hacker begins to look for and identify accounts that have not been used for a long time.  The hacker assumes that these accounts are likely either forgotten or not used so they change the password and elevate privileges to an administrator as a secondary account in order to maintain access to the network.  The hacker may also send out emails to other users with an exploited file such as a PDF with a reverse shell in order to extend their possible access.  No overt exploitation or attacks will occur at this time.  If there is no evidence of detection, a waiting game is played letting the victim think that nothing was disturbed.  With access to an IT account the hacker begins to make copies of all emails, appointments, contacts, instant messages, and files to be sorted through and used later. <br><br>
+        
+        <strong><u>Clearing Tracks:</u></strong> Prior to the attack, the attacker would change their MAC address and run the attacking machine through at least one VPN to help cover their identity.  They will not deliver a direct attack or any scanning technique that would be deemed “noisy”. <br>Once access is gained and privileges have been escalated, the hacker seek to cover their tracks.  This includes clearing out Sent emails, clearing server logs, temp files, etc.  The hacker will also look for indications of the email provider alerting the user or possible unauthorized logins under their account.<br><br>
+
+        <strong><u>Reporting the Attack:</u></strong> The final phase of every successful hacking attack is clearing the tracks. It is very important, after gaining access and misusing the network, that the attacker cover the tracks to avoid being traced and caught. To do this, the attacker clears all kinds of logs and malicious malware related to the attack. During this phase, the attacker will disable auditing and clear and manipulate logs.<br><br></p>
+        <br>
+    </div>
+  
+</body>
+</html>
